@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # database_app
 
 A new Flutter project.
@@ -14,3 +15,6 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+=======
+# MobTerminal
+>>>>>>> 5068e668c2ff13fd2b062bbc55d55f45fb4d7d56

@@ -1,0 +1,40 @@
+{
+    "project_info": {
+      "project_number": "669780582109",
+      "firebase_url": "https://disco-ivy-287302.firebaseio.com",
+      "project_id": "disco-ivy-287302",
+      "storage_bucket": "disco-ivy-287302.appspot.com"
+    },
+    "client": [
+      {
+        "client_info": {
+          "mobilesdk_app_id": "1:669780582109:android:17f721ba3f31914b9a4534",
+          "android_client_info": {
+            "package_name": "com.muskan.database_app"
+          }
+        },
+        "oauth_client": [
+          {
+            "client_id": "669780582109-6bnbfu2obd19a5a8epgh99vpm7fn7vf2.apps.googleusercontent.com",
+            "client_type": 3
+          }
+        ],
+        "api_key": [
+          {
+            "current_key": "AIzaSyBuK0So5TK5YyRkyJLgFTUkfhzylFtyEOM"
+          }
+        ],
+        "services": {
+          "appinvite_service": {
+            "other_platform_oauth_client": [
+              {
+                "client_id": "669780582109-6bnbfu2obd19a5a8epgh99vpm7fn7vf2.apps.googleusercontent.com",
+                "client_type": 3
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "configuration_version": "1"
+  }

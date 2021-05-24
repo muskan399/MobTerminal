@@ -6,75 +6,62 @@ class home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-       backgroundColor: Colors.black,
-       body: Center(
-         child: Column(
-           mainAxisAlignment: MainAxisAlignment.center,
-           children: <Widget>[
-             Stack(
-               
+        backgroundColor: Colors.black,
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Stack(
                 children: <Widget>[
-                  
-               Text("Welcome",
-               style: GoogleFonts.aladin(
-                 color: Colors.blue[100],
-                 fontSize: 100
-               ),),
-
+                  Text(
+                    "Welcome",
+                    style: GoogleFonts.aladin(
+                        color: Colors.blue[100], fontSize: 100),
+                  ),
                 ],
-             ),
-             SizedBox(
-               height: 50
-             ),
+              ),
+              SizedBox(height: 50),
               Material(
                 borderRadius: BorderRadius.circular(10),
                 elevation: 50.0,
                 color: Colors.blue,
                 //shadowColor: Colors.blue[50],
-                
-             child: MaterialButton(
-               child: Container(
-                 padding: EdgeInsets.all(20),
-                 child: Text("Register",
-                 style: GoogleFonts.aladin(
-                   fontSize: 40
-                 ),),
-               ),
-               onPressed: (){
-                 Navigator.pushNamed(context, "register");
-               }
-             ),
-             
-           ),
-           SizedBox(
-             height: 20,
-           ),
-           Material(
+
+                child: MaterialButton(
+                    child: Container(
+                      padding: EdgeInsets.all(20),
+                      child: Text(
+                        "Register",
+                        style: GoogleFonts.aladin(fontSize: 40),
+                      ),
+                    ),
+                    onPressed: () {
+                      Navigator.pushNamed(context, "register");
+                    }),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Material(
                 borderRadius: BorderRadius.circular(10),
                 elevation: 50.0,
                 color: Colors.blue,
                 //shadowColor: Colors.blue[50],
-                
-             child: MaterialButton(
-               child: Container(
-                 padding: EdgeInsets.all(20),
-                 child: Text("Login",
-                 style: GoogleFonts.aladin(
-                   fontSize: 40
-                 ),),
-               ),
-               onPressed: (){
-                 Navigator.pushNamed(context,"login");
-               }
-             ),
-             
-           ),
-          
-          
-           ],
-           
-            
+
+                child: MaterialButton(
+                    child: Container(
+                      padding: EdgeInsets.all(20),
+                      child: Text(
+                        "Login",
+                        style: GoogleFonts.aladin(fontSize: 40),
+                      ),
+                    ),
+                    onPressed: () {
+                      Navigator.pushNamed(context, "login");
+                    }),
+              ),
+            ],
           ),
-       ));
-       }
+        ));
+  }
 }

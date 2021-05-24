@@ -38,12 +38,11 @@ jobs:
         with:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
       - uses: subosito/flutter-action@v1
-        run: echo Hello, world!
+      - run: echo Hello, world!
       - uses: actions/checkout@master
       - uses: devmasx/coverage-check-action@v1.2.0
-
         with:
           type: lcov
-          result_path: coverage/lcov.info
+          result_path: ./coverage/lcov.info
           min_coverage: 90
           token: ${{ github.token }}

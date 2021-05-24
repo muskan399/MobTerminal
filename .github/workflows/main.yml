@@ -28,6 +28,18 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo Hello, world!
+  Linter:
+    name: Checking if code formatting is done correctly
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: axel-op/dart-package-analyzer@v3
+        with:
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
+      - uses: subosito/flutter-action@v1
+        with:
+          channel: 'beta'
+      - run: flutter format --set-exit-if-changed 
   Coverage_report:
     name: Generate coverage report
     runs-on: ubuntu-latest

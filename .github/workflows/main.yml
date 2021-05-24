@@ -28,27 +28,16 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo Hello, world!
-  Coverage_report:
-    name: Generate coverage report
+        
+  Linter:
+    name: Checking if code formatting is done correctly
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
-    - name: Generates LCOV file
-      uses: subosito/flutter-action@v1
-      with:
-        channel: 'beta'
-    - run: flutter test --coverage
-    - name: Report code coverage
-      uses: zgosalvez/github-actions-report-lcov@v1
-      with:
-        coverage-files: coverage/lcov.*.info
-        minimum-coverage: 90
-        artifact-name: code-coverage-report
-        github-token: ${{ secrets.GITHUB_TOKEN }}
-        working-directory: ./
-      # Runs a set of commands using the runners shell
-    - name: Run a multi-line script
-      run: |
-        echo Add other actions to build,
-        echo test, and deploy your project.
+      - uses: actions/checkout@v2
+      - uses: axel-op/dart-package-analyzer@v3
+        with:
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
+      - uses: subosito/flutter-action@v1
+        with:
+          channel: 'beta'
+      - run: flutter test --coverage

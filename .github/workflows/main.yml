@@ -35,7 +35,10 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
     - name: Generates LCOV file
-      run: flutter test --coverage
+      uses: subosito/flutter-action@v1
+      with:
+        channel: 'beta'
+    - run: flutter test --coverage
     - name: Report code coverage
       uses: zgosalvez/github-actions-report-lcov@v1
       with:

@@ -1,5 +1,5 @@
-<<<<<<< HEAD
-# database_app
+
+# Database_app
 
 A new Flutter project.
 

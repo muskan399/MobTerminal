@@ -1,20 +1,9 @@
-<<<<<<< HEAD
-# database_app
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-=======
 # MobTerminal
->>>>>>> 5068e668c2ff13fd2b062bbc55d55f45fb4d7d56
+“Mobterminal” is a Flutter based mobile application using which we can remotely run commands in our system and additionally it also stores the history of every session.
+
+## Technologies Used
+1. Flutter Framework
+2. Google Firebase
+3. CGI programming.
+4. AWS(Hosted web server in Ec2 instance).
